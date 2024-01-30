@@ -11,12 +11,10 @@ class LinkedList():
     def __init__(self, head = None, next = None):
         self.head = head
         self.next = next
-
     
     def push_front(self, data):
         self.next = self.head
         self.head = Node(data, self.next)
-        # return new_node
     
     def pop_front(self):
         if self.head != None:
